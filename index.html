@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nexify</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="Grafiken/upandup_logo_n.svg"
+      type="image/png"
+      sizes="16x16"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="header row">
+        <div class="logo row">
+          <div class="logo__img">
+            <img
+              src="Grafiken/upandup_logo_weiß2.svg"
+              alt="Logo"
+              style="width: 55%; height: auto"
+            />
+          </div>
+          <div class="logo__text">
+            <span>u</span>
+            <span>p</span>
+            <span>a</span>
+            <span>n</span>
+            <span>d</span>
+            <span>u</span>
+            <span>p</span>
+          </div>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li><a href="#services">Sortiment</a></li>
+            <li><a href="#video-services">Video-Dienstleistungen</a></li>
+            <li><a href="#photo-services">Foto-Dienstleistungen</a></li>
+            <li><a class="btn" href="#contact">Kontakt</a></li>
+          </ul>
+          <div class="hamburger-menu row">
+            <img class="hamburger-menu__logo" src="Grafiken/menu.svg" alt="" />
+          </div>
+        </nav>
+      </section>
+      <script>
+        const buchstaben = document.querySelectorAll(".logo__text span");
+
+        buchstaben.forEach(function (span, index) {
+          span.style.animationDelay = index * 0.4 + "s";
+        });
+      </script>
+    </header>
+
+    <main>
+      <section class="slider">
+        <!-- Hier können Bilder oder Videos eingesetzt werden -->
+      </section>
+
+      <section class="services" id="services">
+        <h2>Unsere Angebote</h2>
+        <p>
+          Durchstöbern sie gerne unsere Angebote. Mit der Zeit werden weitere
+          hinzukommen.
+        </p>
+        <div class="services-grid">
+          <div class="service">
+            <h3>
+              Würth 2K-Cutter-Messer mit Schieber | 18mm Klingenbreite | inkl. 3
+              Klingen
+            </h3>
+            <img
+              src="Grafiken/cutter_messer-removebg-preview (1).png"
+              alt="Angebot 1 Bild"
+            />
+            <p>
+              Cutter-Messer mit hochwertigem 2 Komponenten Griff, welcher
+              besonders rutschfest und ergonomisch ist. Das Messer hat eine
+              automatische Klingenarretierung. Klingenbreite: 18mm Klingenlänge:
+              100mm Gesamtlänge Messer: 170mm Lieferumfang: Cutter-Messer, 3x
+              Abbrechklinge
+            </p>
+            <a href="#">Jetzt kaufen</a>
+          </div>
+          <div class="service">
+            <h3>
+              50 Stück Würth Cuttermesser 18mm Abbrechklingen extrem Scharf in
+              der Spenderbox
+            </h3>
+            <img
+              src="Grafiken/Abbrechklingen-removebg-preview.png"
+              alt="Angebot 2 Bild"
+            />
+            <p>
+              Extrem scharf, für präzise Schnitte auch von feinen Streifen.
+              Spitzer Schneidenwinkel und bester Stahl verleiht der Klinge eine
+              extreme Schärfe. Ideal für Papier, Folien und dünne Materialien.
+              Gleitet zügig und leicht durch das Material. Sichere Aufbewahrung.
+              Praktische Spenderbox. Klingenbreite 18 mm Klingenlänge 110 mm
+              Klingenstärke 0,5 mm Werkstoff Stahl Sehr hohe Standzeit
+            </p>
+            <a href="#">Jetzt kaufen</a>
+          </div>
+          <div class="service">
+            <h3>
+              2013 Champagne Dom Pérignon Brut, Champagne AC Moet & Chandon
+            </h3>
+            <img
+              src="Grafiken/dompi_2013-removebg-preview.png"
+              alt="Angebot 3 Bild"
+            />
+            <p>
+              Der 2013 Champagne Dom Pérignon Dom Pérignon ist exquisit. Sein
+              vielschichtiges Bouquet entfaltet sich zunächst mit Noten von
+              Guave und Grapefruit, welche sich mit Aromen von weißen Pfirsichen
+              und Nektarinen verbinden. Diese werden durch Aromen von Vanille
+              und leicht getoastetem Brioche abgerundet. Der Wein hat dank
+              reifer Trauben mit tiefer Frucht viel Kraft und eine subtile
+              Sinnlichkeit. Seine komplexen Aromen finden in einem langen Abgang
+              zusammen: seidig, pikant mineralisch und fein.
+            </p>
+            <a href="#">Jetzt kaufen</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-services" id="video-services">
+        <h2>Video-Dienstleistungen</h2>
+        <p>
+          Beschreibung der verschiedenen Video-Dienstleistungen der Firma
+          Resifly
+        </p>
+        <div class="video-services-grid">
+          <div class="video-service">
+            <h3>Video-Dienstleistung 1</h3>
+            <p>Beschreibung der Video-Dienstleistung 1</p>
+            <video controls>
+              <source src="Grafiken/zoom out v2.mp4" type="video/mp4" />
+            </video>
+            <a href="#">Mehr erfahren</a>
+          </div>
+          <div class="video-service">
+            <h3>Video-Dienstleistung 2</h3>
+            <p>Beschreibung der Video-Dienstleistung 2</p>
+            <video controls></video>
+            <a href="#">Mehr erfahren</a>
+          </div>
+        </div>
+      </section>
+      <section class="photo-services" id="photo-services">
+        <h2>Foto-Dienstleistungen</h2>
+        <p>
+          Beschreibung der verschiedenen Foto-Dienstleistungen der Firma Resifly
+        </p>
+        <div class="photo-services-grid">
+          <div class="photo-service">
+            <h3>Foto-Dienstleistung 1</h3>
+            <p>Beschreibung der Foto-Dienstleistung 1</p>
+            <img
+              src="Grafiken/Afrika 3.jpg"
+              alt="Angebot 1 Bild"
+              style="width: 35%; height: auto"
+            />
+            <a href="#">Mehr erfahren</a>
+          </div>
+          <div class="photo-service">
+            <h3>Foto-Dienstleistung 2</h3>
+            <p>Beschreibung der Foto-Dienstleistung 2</p>
+            <img
+              src="Grafiken/Afrika 2.jpg"
+              alt="Angebot 1 Bild"
+              style="width: 35%; height: auto"
+            />
+            <a href="#">Mehr erfahren</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

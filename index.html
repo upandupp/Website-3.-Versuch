@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>upandup</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <div class="row">
+      <img src="grafiken/upandup_logo.svg" alt="Mein Logo" class="logo" />
+    </div>
+    <div class="content">
+      <h1>-in Progress-</h1>
+    </div>
+    <script>
+      const buchstaben = document.querySelectorAll(".logo__text span");
+      buchstaben.forEach(function (span, index) {
+        span.style.animationDelay = index * 0.4 + "s";
+      });
+
+      // Warten bis das DOM vollständig geladen ist
+      document.addEventListener("DOMContentLoaded", function () {
+        // Verzögerung von 3 Sekunden
+        setTimeout(function () {
+          // Element mit der Klasse "content" finden
+          const content = document.querySelector(".content");
+          // Der Klasse "new-class" hinzufügen
+          content.classList.add("show");
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

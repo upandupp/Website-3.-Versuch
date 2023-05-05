@@ -230,7 +230,9 @@ body {
   border-radius: 25px;
   text-decoration: none;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 0rem;
+  margin-bottom: 4rem;
+  height: 2.6rem;
 }
 
 .service a:hover {
